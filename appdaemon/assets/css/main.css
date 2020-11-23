@@ -42,8 +42,9 @@ a {
 
 .main{
    height:320px;
-   width:80%;
-   margin:auto;
+   /*width:80%;
+   margin:auto;*/
+   margin:auto 10px auto 10px;
    z-index:-1;
    opacity: 1;
    filter:alpha(opacity=100);
@@ -298,14 +299,21 @@ cursor: pointer;
 
 .callbacks
 {
-    table-layout: fixed;
+    /*table-layout: fixed;*/
     width: 100%;
     white-space: nowrap;
 }
 
-.callbacks td
+.callbacks th
 {
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.callbacks td
+{
+    /*white-space: nowrap;*/
     overflow: hidden;
     text-overflow: ellipsis;
 }
